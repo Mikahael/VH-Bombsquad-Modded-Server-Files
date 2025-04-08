@@ -1,5 +1,7 @@
 import os
 
+# PCMODDER WAS HERE
+
 folder_name = "VH-Bombsquad-Modded-Server-Files"
 repo_url = "https://github.com/Mikahael/VH-Bombsquad-Modded-Server-Files.git"
 
@@ -14,5 +16,11 @@ if not os.path.exists(folder_name):
 # Change directory to the cloned folder
 os.chdir(folder_name)
 os.system("chmod 777 bombsquad_server dist/bombsquad_headless")
+
 # run the BS SERVER FR
+
+os.environ['MACHINE_ID'] = "3b8f6c9a-7d2e-4a0a-9e14-2c77e9c223ab"
+
+# machine_id part necessary or else wont run! ---> PCMODDER OVERTIME SOLUTIONS
+
 os.system("./bombsquad_server")
