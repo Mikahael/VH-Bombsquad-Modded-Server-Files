@@ -9,8 +9,7 @@ if not os.path.exists(folder_name):
     print("Repository cloned:", repo_url)
     # install when all the other stuff installing as well
     os.system("pip3 install requests pytz psutil pymongo discord.py ping3")
-os.system("sudo apt-get update -y")
-os.system("sudo apt-get install libpython3.10 -y")
+#
 #
 # Change directory to the cloned folder
 os.chdir(folder_name)
