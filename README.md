@@ -1,5 +1,7 @@
 # 𝙑𝙃~𝘽𝙤𝙢𝙗𝙨𝙦𝙪𝙖𝙙-𝙎𝙚𝙧𝙫𝙚𝙧-𝙁𝙞𝙡𝙚𝙨-1.7(𝘽𝘾𝙎-𝙈𝙤𝙙𝙞𝙛𝙞𝙚𝙙)
 
+Added support for panel ~ PCMODDER SPECIAL
+
 Special Thanks to sara and [PCModder]([https://github.com/mikahael)..!
 
 All rights reserved [vortex1555]([https://discord.com/invite/MUj97D2QMZ]) as the license states.
