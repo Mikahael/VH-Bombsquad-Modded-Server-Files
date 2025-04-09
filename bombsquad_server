@@ -570,9 +570,12 @@ class ServerManagerApp:
         os.environ['BA_SERVER_WRAPPER_MANAGED'] = '1'
         os.environ['BA_DEVICE_NAME'] = self._config.party_name
         logging.info(f"{Clr.CYN}{Clr.BLD}Launching server sub-process. Hang tight!{Clr.RST}")
-        binary_name = ('BallisticaCoreHeadless.exe'
-                       if os.name == 'nt' else './bombsquad_headless')
-        if platform.processor() == 'aarch64':
+        import platform
+        # Determine the binary name based on architecture
+        cpu_arch = platform.machine()
+        if cpu_arch == 'x86_64':
+            binary_name = './bombsquad_headless'
+        else:
             binary_name = './bombsquad_headless_aarch64'
         assert self._ba_root_path is not None
         self._subprocess = None
