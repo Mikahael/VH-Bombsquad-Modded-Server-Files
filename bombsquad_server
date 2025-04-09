@@ -38,10 +38,13 @@ def migrate_to_aarch():
     with open(".we_are_good","w") as f:
         pass
 
-# By default we assume x86_64; if it's not, we migrate to aarch64 setup
-if platform.machine() != 'x86_64':
+# by default we have x86_64 setup
+# if we found aarch64 system copy required files
+if platform.processor() == 'aarch64':
     print("We are on aarch64 system")
-    if not os.path.exists(".we_are_good"):
+    if os.path.exists(".we_are_good"):
+        pass
+    else:
         migrate_to_aarch()
 
 
