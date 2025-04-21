@@ -3,7 +3,7 @@
 '''
 Character Chooser by Mr.Smoothy
 
-This plugin will let you choose your character from lobby.
+This plugin will let you choose your character from lobby. 
 
 Install this plugin on your Phone/PC  or on Server
 
