@@ -73,7 +73,7 @@ class modSetup(ba.Plugin):
         except Exception as e:
             logging.error(f"An error occurred in on_app_running: {str(e)}")
 
-    # it works sometimes , but it blocks shutdown so server raise runtime exception,   also dump server logs
+    # it works sometimes , but it blocks shutdown so server raise runtime exception,   also dump server logs 
     def on_app_shutdown(self):
         print("Server shutting down , lets save cache")
         # lets try  threading here
